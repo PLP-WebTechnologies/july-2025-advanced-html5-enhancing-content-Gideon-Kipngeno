@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Forms -  week 2</title>    
+</head>
+<body>
+    <!-- This is to demonstarte the use of ordered lists -->
+    <h2 id="header">Popular Destinations</h2>
+    <ol>
+        <li>Bali, Indonesia</li>
+        <li>Paris, France</li>
+        <li>Tokyo, Japan</li>
+    </ol>
+
+    <!-- This is to demonstarte the use of unordered lists -->
+    <h2>Travel Packages</h2>
+    <ul>
+        <li>Beach Getaway</li>
+        <li>Mountain Trekking</li>
+        <li>City Exploration</li>
+        <li>Cultural Immersion</li>
+    </ul>
+        <!-- This is to demonstarte the use of Definition lists -->
+    <h2>Travel Terms</h2>
+    <dl>
+        <dt>All-Inclusive</dt>
+        <dd>Includes flights, accommodation, meals and activities.</dd>
+        <dt>Flexi-Deal</dt>
+        <dd>Book now with deposit and pay later.</dd>
+    </dl>
+    <!-- This is to demonstarte the use of nested lists -->
+    <h2>Travel Options</h2>
+    <ol>
+        <li>Summer Vacations
+            <ul>
+                <li>Mediterranean Cruise</li>
+                <li>Caribbean Islands</li>
+                <li>Alaskan Adventure</li>
+            </ul>
+        </li>
+        <li>Winter Getaways
+            <ul>
+                <li>Swiss Alps Skiing</li>
+                <li>Northern Lights Tour</li>
+                <li>Australian Summer</li>
+            </ul>
+        </li>
+    </ol>
+
+    <!-- This is to demonstarte how embed  media in Html -->
+    <h2>Travel Images</h2>
+    <img src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg" alt="Eiffel Tower in Paris" 
+         width="500" 
+         height="300">
+
+    <!-- This is to demonstarte the use of table in html -->
+    <h2>Upcoming Tours</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Tour Name</th>
+                <th>Duration</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>European Highlights</td>
+                <td>14 days</td>
+                <td>$2,499</td>
+            </tr>
+            <tr>
+                <td>Asian Explorer</td>
+                <td>21 days</td>
+                <td>$3,799</td>
+            </tr>
+            <tr>
+                <td>African Safari</td>
+                <td>10 days</td>
+                <td>$4,200</td>
+            </tr>
+            <tr>
+                <td>South American Adventure</td>
+                <td>15 days</td>
+                <td>$3,500</td>
+            </tr>
+            <tr>
+                <td>Australian Outback</td>
+                <td>12 days</td>
+                <td>$3,000</td> 
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- This is to demonstarte the use of multimedia in html -->
+    <h2>Travel Videos & Audio Guides</h2>
+    <video width="500" height="300" controls autoplay loop muted>
+       <source src="https://videos.pexels.com/video-files/33384267/14213132_1080_1920_25fps.mp4" type="video/mp4">
+       Travel Adventure video guides.
+    </video>
+
+    <audio controls>
+        <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg">
+        Travel Adventure audio guides.
+    </audio>
+    
+    <!-- This is to demonstarte the use of forms in html -->
+    <h2>Travel Booking Form</h2>
+    <form action="#" method="post">
+        <label for="name">Full Name*:</label>
+        <input type="text" name="name" id="name" required placeholder="Enter your full name">
+        <br><br>
+        
+        <label for="email">Email*:</label>
+        <input type="email" name="email" id="email" required placeholder="Enter your email"> 
+        <br><br>
+        
+        <label for="phone">Phone*:</label>
+        <input type="tel" name="phone" id="phone" required placeholder="Enter your phone number">
+        <br><br>
+        
+        <label for="departure">Departure Date*:</label>
+        <input type="date" name="departure" id="departure" required>
+        <br><br>
+        
+        <label>Tour Type:</label>
+        <input type="radio" name="tourtype" value="group" checked>Group Tour<br>
+        <input type="radio" name="tourtype" value="private">Private Tour<br>
+        <br>
+        
+        <label>Interests:</label>
+        <input type="checkbox" name="interests" value="beach">Beach<br>
+        <input type="checkbox" name="interests" value="culture">Culture<br>
+        <input type="checkbox" name="interests" value="adventure">Adventure<br>
+        <br>
+        
+        <label for="tour">Select Tour:</label>
+        <select name="tour" id="tour">
+            <option value="europe">European Highlights</option>
+            <option value="asia">Asian Explorer</option>
+            <option value="africa">African Safari</option>
+        </select>
+        <br><br>
+        
+        <label for="passport">Upload Passport Copy:</label>
+        <input type="file" name="passport" id="passport" accept=".pdf,.jpg,.png">
+        <br><br>
+        
+        <label for="notes">Special Requests:</label>
+        <textarea name="notes" id="notes" cols="30" rows="5" placeholder="Any special requirements?"></textarea>
+        <br><br>
+        
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the booking terms*</label>
+        <br><br>
+        
+        <input type="submit" value="Book Now">
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>
